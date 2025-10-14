@@ -43,8 +43,12 @@ dependencies = [
     "mrd-python == 2.0.0",
 ]
 
+[project.gui-scripts]
+marge = "marge.main:MaRGE"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/marge"]
 
-[tools.setuptools]
+[tool.setuptools]
 include-package-data = true
+packages = ["marge"]
