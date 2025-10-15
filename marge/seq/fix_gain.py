@@ -20,7 +20,7 @@ for subdir in subdirs:
 
 import marge.seq.larmor as larmor
 import marge.configs.hw_config as hw
-import autotuning.autotuning as autotuning
+import marge.autotuning.autotuning as autotuning
 
 
 class FixGain(larmor.Larmor):
