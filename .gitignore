@@ -45,3 +45,4 @@ build/
 /seq/experiments
 /b0_maps/
 /reports
+/local_config.py
