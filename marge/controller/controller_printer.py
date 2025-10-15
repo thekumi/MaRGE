@@ -1,7 +1,7 @@
 from datetime import datetime
 from pathlib import Path
 
-import recon.data_processing as dp
+import marge.recon.data_processing as dp
 
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image

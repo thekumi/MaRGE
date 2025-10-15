@@ -27,7 +27,7 @@ from marge.marge_utils import utils
 import shutil
 import nibabel as nib
 
-import recon.data_processing as dp
+import marge.recon.data_processing as dp
 
 class MRIBLANKSEQ:
     """
