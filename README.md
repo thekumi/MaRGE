@@ -24,7 +24,7 @@ marge
 Alternatively, if you prefer to download from source and have full access to the code, simply clone this repository:
 
 ```bash
-git clone https://github.com/josalggui/MaRGE
+git clone https://git.private.coffee/kumi/MaRGE.git
 ```
 Create your virtual environment and install all the requirements with
 
