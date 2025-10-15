@@ -10,17 +10,13 @@ But note that pip installation only works with red pitayas configured with stati
 You can install **MaRGE** using pip:
 
 ```bash
-pip install marge-mri
+pip install git+https://git.private.coffee/kumi/MaRGE.git
 ```
 
 Then, you can launch the GUI with:
 
-```python
-# Import marge
-from marge import main
-
-# Run MaRGE
-main.MaRGE()
+```bash
+marge
 ```
 
 ## Installation from source
@@ -45,6 +41,20 @@ Take a look at the MaRGE [Wiki](https://github.com/josalggui/MaRGE/wiki)! (under
 Take a look at the MaRGE [Documentation](https://josalggui.github.io/MaRGE/)! (under development)
 
 Take a look at the MaRGE [PyPi](https://pypi.org/project/marge-mri/)
+
+## Local Configuration
+
+You can override the default settings for the marcos_client package by creating a Python config file in one of these locations (checked in this order):
+
+1. The file specified by the `MARCOS_CLIENT_CONFIG` environment variable
+2. `local_config.py` in the directory you are running `marge` from
+3. `~/.config/marcos_config.py` in your home directory
+
+If a variable is not set in your config file, the package default will be used.
+
+**To create a custom config file:**
+
+Copy [`default_config.py`](marge/marcos/marcos_client/default_config.py) to one of the locations above and edit it.
 
 ### [Setting up a Red Pitaya](https://github.com/josalggui/MaRGE/wiki/Setting-up-Red-Pitaya)
 
