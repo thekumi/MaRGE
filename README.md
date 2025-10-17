@@ -26,10 +26,16 @@ Alternatively, if you prefer to download from source and have full access to the
 ```bash
 git clone https://git.private.coffee/kumi/MaRGE.git
 ```
+
 Create your virtual environment and install all the requirements with
 
 ```bash
-pip install -r requirements.txt
+pip install -Ue .
+```
+
+Then, you can launch the GUI with:
+```
+marge
 ```
 
 ## Notes
